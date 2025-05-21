@@ -218,7 +218,7 @@ export default function InvoiceForm() {
   const emailInvoice = () => {
     const emailSubject = `Invoice ${form.getValues(
       "invoiceNumber"
-    )} from Humai Webs`;
+    )} from HumAi Webs`;
     const emailBody = `Dear ${form.getValues("clientName")},
 
 Please find attached your invoice ${form.getValues(
@@ -367,7 +367,7 @@ Humai Webs`;
                                 <FormLabel>Phone</FormLabel>
                                 <FormControl>
                                   <Input
-                                    placeholder="+1 234 567 8900"
+                                    placeholder="+92 349 1703748"
                                     {...field}
                                   />
                                 </FormControl>
@@ -852,8 +852,12 @@ Humai Webs`;
                         className="h-16 mb-2"
                       />
                     ) : (
-                      <div className="text-2xl font-bold text-[#005587]">
-                        Humai Webs
+                      <div className="text-2xl font-bold text-[#005587] w-32 p-0">
+                        <img
+                          className="p-0"
+                          src="/HumAi-Logo.png"
+                          alt="Company Logo"
+                        />
                       </div>
                     )}
                   </div>
@@ -903,11 +907,11 @@ Humai Webs`;
                     <div className="text-sm font-semibold text-gray-500 mb-1">
                       From:
                     </div>
-                    <div className="font-bold">Humai Webs</div>
+                    <div className="font-bold">HumAi Webs</div>
                     <div>Office 1A, IK Tower, MPCHS E-11/3</div>
                     <div>Islamabad Capital Territory 44810</div>
                     <div className="mt-2">info@humaiwebs.com</div>
-                    <div>+1 234 567 8900</div>
+                    <div>+92 349 1703748</div>
                   </div>
                 </div>
 

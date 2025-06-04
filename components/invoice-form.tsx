@@ -535,7 +535,7 @@ Humai Webs`;
                                 ? "font-bold text-[#005587] dark:text-white"
                                 : ""
                             }`}>
-                            Price per Hour
+                            Price per Year
                           </Label>
                           <Switch
                             id="pricing-mode"
@@ -565,12 +565,12 @@ Humai Webs`;
                               <TableHead>Service Type</TableHead>
                               <TableHead>
                                 {pricingMode === "hourly"
-                                  ? "Hours"
+                                  ? "Years"
                                   : "Quantity"}
                               </TableHead>
                               <TableHead>
                                 {pricingMode === "hourly"
-                                  ? "Rate/Hour"
+                                  ? "Rate/Year"
                                   : "Rate"}
                               </TableHead>
                               <TableHead>Total</TableHead>
@@ -923,10 +923,10 @@ Humai Webs`;
                         <th className="py-2 px-4 border-b">Description</th>
                         <th className="py-2 px-4 border-b">Service Type</th>
                         <th className="py-2 px-4 border-b">
-                          {pricingMode === "hourly" ? "Hours" : "Qty"}
+                          {pricingMode === "hourly" ? "Years" : "Qty"}
                         </th>
                         <th className="py-2 px-4 border-b">
-                          {pricingMode === "hourly" ? "Rate/Hour" : "Rate"}
+                          {pricingMode === "hourly" ? "Rate/Year" : "Rate"}
                         </th>
                         <th className="py-2 px-4 border-b text-right">
                           Amount

@@ -603,11 +603,20 @@ Humai Webs`;
                                       <SelectValue />
                                     </SelectTrigger>
                                     <SelectContent>
+                                      <SelectItem value="Professional Emails">
+                                        Professional Emails
+                                      </SelectItem  >
+                                      <SelectItem value="Graphic Design">
+                                        Graphics
+                                      </SelectItem>
                                       <SelectItem value="Website Development">
                                         Website Development
                                       </SelectItem>
                                       <SelectItem value="Graphics Designing">
                                         Graphics Designing
+                                      </SelectItem>
+                                      <SelectItem value="Domain/Hosting Registration">
+                                        Domain/ Hosting Registration
                                       </SelectItem>
                                       <SelectItem value="SEO">SEO</SelectItem>
                                       <SelectItem value="Mobile App Development">
@@ -714,7 +723,7 @@ Humai Webs`;
 
                         <div className="flex items-center justify-between">
                           <div className="flex items-center space-x-2">
-                            <span>Discount:</span>
+                            <span>Friends & Family Discount:</span>
                             <FormField
                               control={form.control}
                               name="discount"
@@ -966,7 +975,7 @@ Humai Webs`;
                     )}
                     {watchDiscount > 0 && (
                       <div className="flex justify-between py-2">
-                        <div>Discount ({watchDiscount}%):</div>
+                        <div>Discount Friends & family ({watchDiscount}%):</div>
                         <div>-{formatCurrency(discountAmount)}</div>
                       </div>
                     )}
@@ -998,7 +1007,7 @@ Humai Webs`;
                 )}
 
                 {/* Payment Information */}
-                <div className="mb-8">
+                {/* <div className="mb-8">
                   <div className="font-semibold mb-2">Payment Information:</div>
                   <div className="text-gray-600">
                     <div>Account Title: HumAi Online Marketing</div>
@@ -1006,7 +1015,7 @@ Humai Webs`;
                     <div>IBAN: PK09UNIL0109000290092222</div>
                     <div>Bank: United Bank Limited</div>
                   </div>
-                </div>
+                </div> */}
 
                 {/* Payment Terms */}
                 <div className="text-center text-gray-500 text-sm mt-8">
@@ -1055,3 +1064,4 @@ Humai Webs`;
     </div>
   );
 }
+

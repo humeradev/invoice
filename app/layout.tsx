@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  title: 'HumAi Invoice System',
+  description: 'A simple invoice management system built with Next.js and React.',
+  generator: 'Next.js',
 }
 
 export default function RootLayout({
@@ -16,5 +16,4 @@ export default function RootLayout({
     <html lang="en">
       <body>{children}</body>
     </html>
-  )
-}
+  ) }
